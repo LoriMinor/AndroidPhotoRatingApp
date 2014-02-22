@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoriMinorAssignment2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lblActivityTitle">Capture an Image</string>
+    <string name="lblOpenGallery">Open Image Gallery</string>
+    <string name="lblTakePhoto">Take a Photo</string>
+    <string name="title_activity_image_information">ImageInformationActivity</string>
+    <string name="lblLikeImage">Do you like this image?</string>
+    <string name="blank"></string>
+    <string name="lblFileInfo">"File Info: "</string>
+    <string name="lblFileWidth">"Width: "</string>
+    <string name="lblFilePath">"File path: "</string>
+    <string name="lblFileHeight">"Height: "</string>
+    <string name="lblFileSize">"Size (bytes): "</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="contentDescription">Displays selected photo</string>
+
+</resources>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ImageInformationActivity" >
+
+    <RatingBar
+        android:id="@+id/rbRatePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLikeImage"
+        android:layout_centerHorizontal="true"
+        android:onClick="onRatingBarClicked" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnSubmit" />
+
+    <TextView
+        android:id="@+id/txtLikeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lblLikeImage" />
+
+    <TextView
+        android:id="@+id/lblFilePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rbRatePhoto"
+        android:layout_below="@+id/rbRatePhoto"
+        android:text="@string/lblFilePath" />
+
+    <TextView
+        android:id="@+id/txtFileWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblFileHeight"
+        android:layout_alignLeft="@+id/txtLikeImage"
+        android:layout_below="@+id/lblFilePath"
+        android:text="@string/blank" />
+
+    <TextView
+        android:id="@+id/lblFileHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtLikeImage"
+        android:layout_below="@+id/lblFilePath"
+        android:layout_marginRight="18dp"
+        android:text="@string/lblFileHeight" />
+
+    <TextView
+        android:id="@+id/txtFileHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblFileHeight"
+        android:layout_alignRight="@+id/rbRatePhoto"
+        android:layout_below="@+id/lblFilePath"
+        android:layout_toRightOf="@+id/lblFileHeight"
+        android:text="@string/blank" />
+
+    <TextView
+        android:id="@+id/lblFileWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblFilePath"
+        android:layout_alignTop="@+id/txtFileWidth"
+        android:text="@string/lblFileWidth" />
+
+    <TextView
+        android:id="@+id/lblFileSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblFileWidth"
+        android:layout_below="@+id/lblFileWidth"
+        android:text="@string/lblFileSize" />
+
+    <TextView
+        android:id="@+id/txtImageFileSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblFileSize"
+        android:layout_alignLeft="@+id/btnSubmit"
+        android:layout_below="@+id/lblFileHeight"
+        android:text="@string/blank" />
+
+    <TextView
+        android:id="@+id/txtFilePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblFilePath"
+        android:layout_alignBottom="@+id/lblFilePath"
+        android:layout_toRightOf="@+id/lblFilePath"
+        android:text="@string/blank" />
+
+    <ImageView
+        android:id="@+id/imgDisplayImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txtFileHeight"
+        android:layout_below="@+id/lblFileSize"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>
